@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Perfect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path fill="#bf0101" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="index" class="logo"><b>Mr.Perfect</b><span>Fitnessstudio</span></a></li>
+            <li class="hideOnMobile"><a href="#index">Home</a></li>
+            <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#services">services</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26 "><path fill="#fff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+</header>
+    <section id="home">
+        <div class="bmi">
+            <div class="txt">
+                <h2>IT'S <span> GYM </span> TIME. LET'S GO WE ARE READY TO  <span>FIT YOU</span></h2>
+                <button id="toggleButton">BMI Calculator</button>
+            </div>
+        
+            <div class="bmi-container" id="myElement">
+                <h1 style="color: #000;">BMI Calculator</h1>
+                <div>
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" placeholder="Enter your height" required>
+                </div>
+                <div>
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter your weight" required>
+                </div>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <div id="result"></div>
+            </div>
+        </div>
+        <!--<div class="base"><img src="/image/image-11.jpg" alt=""></div>-->
+        
+        <div class="card">
+                <h1 style="font-size: 60px; padding: 20px;">Our Trainers</h1>
+        <div class="Trainer">
+            <div class="PersonCard">
+                <img src="https://drive.google.com/uc?export=view&id=1-di5LvEor4yrAJ3wuGaTTF5yZR-ctrec" alt="PersonName">
+                <h3 class="Position">Trainer</h3>
+                <h2 class="Name">Muthamizh</h2>
+                <p class="achivment">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi nam placeat reprehenderit delectus. Accusantium dignissimos molestias, dicta aperiam commodi sunt assumenda distinctio voluptatem dolor non repudiandae omnis fugit eum.
+                </p>
+                <div class="social">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                      </svg></a>
+                </div>
+            </div>
+            <div class="PersonCard">
+                <img src="https://drive.google.com/uc?export=view&id=1-di5LvEor4yrAJ3wuGaTTF5yZR-ctrec" alt="PersonName">
+                <h3 class="Position">Trainer</h3>
+                <h2 class="Name">Muthamizh</h2>
+                <p class="achivment">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi nam placeat reprehenderit delectus. Accusantium dignissimos molestias, dicta aperiam commodi sunt assumenda distinctio voluptatem dolor non repudiandae omnis fugit eum.
+                </p>
+                <div class="social">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                      </svg></a>
+                </div>
+            </div>
+            <div class="Man"></div>
+            <div class="PersonCard">
+                <img src="https://drive.google.com/uc?export=view&id=1-di5LvEor4yrAJ3wuGaTTF5yZR-ctrec" alt="PersonName">
+                <h3 class="Position">Trainer</h3>
+                <h2 class="Name">Muthamizh</h2>
+                <p class="achivment">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi nam placeat reprehenderit delectus. Accusantium dignissimos molestias, dicta aperiam commodi sunt assumenda distinctio voluptatem dolor non repudiandae omnis fugit eum.
+                </p>
+                <div class="social">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                      </svg></a>
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                      </svg></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <div class="image">
+            <h3 style="font-size: 60px; padding: 20px;">Our Members</h3>
+            <img src="https://drive.google.com/uc?export=view&id=1FalRLnJIp7Yil7bsmMyPdpYPeqlllGAe" alt="photo">
+            <img src="https://drive.google.com/uc?export=view&id=1FalRLnJIp7Yil7bsmMyPdpYPeqlllGAe" alt="photo">
+            <img src="https://drive.google.com/uc?export=view&id=1FalRLnJIp7Yil7bsmMyPdpYPeqlllGAe" alt="photo">
+            <img src="https://drive.google.com/uc?export=view&id=1FalRLnJIp7Yil7bsmMyPdpYPeqlllGAe" alt="photo">
+            <img src="https://drive.google.com/uc?export=view&id=1FalRLnJIp7Yil7bsmMyPdpYPeqlllGAe" alt="photo">
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 style="font-size: 66px; text-align: center; padding: 30px;">Our Gallery</h2>
+
+
+        <div class="gallery">
+    
+            <div class="gallery-item small">
+                <img src="https://drive.google.com/uc?export=view&id=1u6Sl8KSu-tQisYP3EJbkSxPybPtsxRUv" alt="Small Image 1">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=11TGaH9KQo0LUJs8TNmwdniR295w4KZaC" alt="Large Image 1">
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://drive.google.com/uc?export=view&id=1vMiLPO6coJ9rS3DWPGyONu-5kXtu7-eS" alt="Small Image 2">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=1fom2lEYPhc9CQryfEewFhnfKsdT1gCCD" alt="Large Image 2">
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://drive.google.com/uc?export=view&id=1u6Sl8KSu-tQisYP3EJbkSxPybPtsxRUv" alt="Small Image 1">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=11TGaH9KQo0LUJs8TNmwdniR295w4KZaC" alt="Large Image 1">
+            </div>
+            <div class="gallery-item small">
+                <img src="https://drive.google.com/uc?export=view&id=1vMiLPO6coJ9rS3DWPGyONu-5kXtu7-eS" alt="Small Image 2">
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://drive.google.com/uc?export=view&id=1fom2lEYPhc9CQryfEewFhnfKsdT1gCCD" alt="Large Image 2">
+            </div>
+            <div class="gallery-item small">
+                <img src="https://drive.google.com/uc?export=view&id=1u6Sl8KSu-tQisYP3EJbkSxPybPtsxRUv" alt="Small Image 1">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=11TGaH9KQo0LUJs8TNmwdniR295w4KZaC" alt="Large Image 1">
+            </div>
+            <div class="gallery-item small">
+                <img src="https://drive.google.com/uc?export=view&id=1vMiLPO6coJ9rS3DWPGyONu-5kXtu7-eS" alt="Small Image 2">
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://drive.google.com/uc?export=view&id=1fom2lEYPhc9CQryfEewFhnfKsdT1gCCD" alt="Large Image 2">
+            </div>
+            <div class="gallery-item small">
+                <img src="https://drive.google.com/uc?export=view&id=1vMiLPO6coJ9rS3DWPGyONu-5kXtu7-eS" alt="Small Image 1">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=11TGaH9KQo0LUJs8TNmwdniR295w4KZaC" alt="Large Image 1">
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://drive.google.com/uc?export=view&id=1vMiLPO6coJ9rS3DWPGyONu-5kXtu7-eS" alt="Small Image 2">
+            </div>
+            <div class="gallery-item large">
+                <img src="https://drive.google.com/uc?export=view&id=1fom2lEYPhc9CQryfEewFhnfKsdT1gCCD" alt="Large Image 2">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 style="font-size: 66px; text-align: center; padding: 30px;">Our services</h2>
+<div class="cardcontainer">
+    <div class="scardcontainer">
+        <div class="photo"><img src="/image/Weight-Gain.jpg" alt="Weight-Gain"></div>
+        <div class="paragraph">
+            <h1>Weight Gain</h1>
+            <h3>Weight gain is an increase in body weight. This can involve an increase in muscle mass, fat deposits, excess fluids such as water or other factors. Weight gain can be a symptom of a serious medical condition.</h3>
+        </div>
+    </div>
+    <div class="scardcontainer">
+        <div class="photo-1"><img src="/image/Weight-Loss.jpg" alt="Weight-Loss"></div>
+        <div class="paragraph">
+            <h1>Weight Loss</h1>
+            <h3>Weight loss is a decrease in body weight. This can occur due to various factors, including a reduction in muscle mass, fat loss, or loss of body fluids. Consultation with a healthcare professional is recommended for significant weight changes.</h3>
+        </div>
+    </div>
+    <div class="scardcontainer">
+        <div class="photo"><img src="/image/Strength-Training.jpg" alt="Strength-Training"></div>
+        <div class="paragraph">
+            <h1>Strength Training</h1>
+            <h3>Strength training is a form of exercise that uses resistance to induce muscular contraction, building strength, endurance, and muscle mass. It plays a crucial role in overall fitness and can contribute to weight management and other health benefits.</h3>
+        </div>
+    </div>
+    <div class="scardcontainer">
+        <div class="photo-1"><img src="/image/Training-Shaping.jpg" alt="Training-Shaping"></div>
+        <div class="paragraph">
+            <h1>Training and Shaping</h1>
+            <h3>Training and shaping involve physical activities aimed at improving fitness, body composition, and overall well-being. These activities may include cardiovascular exercises, strength training, and flexibility exercises.</h3>
+        </div>
+    </div>
+    <div class="scardcontainer">
+        <div class="photo"><img src="/image/Silambam.jpg" alt="Silambam"></div>
+        <div class="paragraph">
+            <h1>Silambam</h1>
+            <h3>Silambam is a traditional Indian martial art that incorporates the use of staffs or sticks. It has historical and cultural significance and provides physical and mental benefits, including improved coordination and flexibility.</h3>
+        </div>
+    </div>
+    <div class="scardcontainer">
+        <div class="photo-1"><img src="/image/Self-Defense.jpg" alt="Self-Defense"></div>
+        <div class="paragraph">
+            <h1>Self-Defense</h1>
+            <h3>Self-defense involves techniques and strategies to protect oneself from physical harm. Learning self-defense can empower individuals, enhance confidence, and contribute to personal safety and well-being.</h3>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section id="about">
+        <h2 style="font-size: 66px; text-align: center; padding: 30px;">About Us</h2>
+
+        <div class="about">
+            <div class="acontainer">
+                <div class="paragraph">
+                    <h1>About our gym</h1>
+                    <p>SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES VALUABLE TIME!</p>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid aut est. Hic cum dolor dolores sunt aliquam omnis, suscipit dignissimos. Esse omnis numquam ut reprehenderit ad quaerat dolore minima?</h3>
+                </div>
+            </div>
+            <button class="button"><a href="signup.html">BECOME A MEMBER</a></button>
+            </div>
+    </section>
+
+    <section id="contact">
+        <article id="cont">
+            <h2 style="font-size: 66px; text-align: center; padding: 30px;">Contact Us!</h2>
+            <div class="contact">
+                <div class="cont cont-detail">
+                    <h3>Meet Us</h3>
+                    <pre><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                      </svg></span>9361524859</pre>
+                    <pre><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                      </svg></span>muthudmj2@gmail.com</pre>
+                    <pre><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                      </svg></span>new market street , 
+                              back side of rithanya mahal, 
+                              old ADMK office, 
+                              Tamil Nadu 621704.</pre>
+                </div>
+            
+                <div class="cont cont-form">
+                    <form action="#">
+                        <h3>Contact Me!</h3>
+                        <input type="text" name="name" id="name" placeholder="NAME">
+                        <input type="email" placeholder="EMAIL">
+                        <input type="tel" name="number" id="number" placeholder="Number">
+                        <button value="go">Send</button>
+                    </form>
+                </div>
+                <div class="cont cont-map">
+                <h3>Map</h3>   
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10654.039684024996!2d79.08453191028542!3d11.139251391195247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baadfef14f0e1b9%3A0xb5867f842056f443!2sMr.Perfectfitnesstudio!5e0!3m2!1sen!2sin!4v1700169362337!5m2!1sen!2sin" width="315" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </article>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="socialIcon">
+                <a href="#"><svg xmlns="http://submitwww.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="#home" >Home</a></li>
+                    <li id="scrollToTopBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#bf0101" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 5l0 14" />
+                        <path d="M18 11l-6 -6" />
+                        <path d="M6 11l6 -6" />
+                      </svg></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <br>
+            <hr style="color: white; width: 80%; margin: 0 auto;">
+            <div class="footerbottom">
+                <p>Copyright &copy;2023; Designd by <span class="Designer">Tamizh</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
